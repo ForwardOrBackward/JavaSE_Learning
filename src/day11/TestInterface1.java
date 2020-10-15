@@ -5,7 +5,7 @@ interface IA{
 	public default void df() {
 		System.out.println("df");
 	}
-	static void sf() {//²»ÄÜ±» ×Ó½Ó¿Ú»òÊµÏÖÀà¼Ì³Ğ
+	static void sf() {//ä¸èƒ½è¢« å­æ¥å£æˆ–å®ç°ç±»ç»§æ‰¿
 		System.out.println("sf");
 	}
 	void af();//
@@ -20,7 +20,7 @@ interface IB{
 	void af();
 }
 class DemoImpl implements IA,IB{
-	//ÄäÃûÄÚ²¿Àà
+	//åŒ¿åå†…éƒ¨ç±»
 	IA ia = new IA() {
 		
 		@Override
@@ -70,7 +70,5 @@ public class TestInterface1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 	}
-
 }
