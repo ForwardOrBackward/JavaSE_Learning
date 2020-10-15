@@ -20,9 +20,7 @@ public class TestLambda5 {
 		Arrays.stream(arr).forEach(e -> System.out.print(e));//12345
 		Arrays.stream(arr).forEach(System.out::print);//12345
 		
-//		System.out.println(Arrays.toString(arr));
-		
-		
+//		System.out.println(Arrays.toString(arr));	
 		
 	}
 
