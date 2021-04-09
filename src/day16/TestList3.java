@@ -1,5 +1,6 @@
 package day16;
 
+import java.util.LinkedList;
 import java.util.Vector;
 
 public class TestList3 {
@@ -19,6 +20,12 @@ public class TestList3 {
 		 */
 		list.add("aa");//
 		System.out.println(list);
+		LinkedList<String> list2 = new LinkedList<>();
+		list2.add("aa");
+		list2.add("bb");
+		list2.addFirst("cc");
+		list2.addLast("dd");
+		System.out.println(list2);
 	}
 
 }

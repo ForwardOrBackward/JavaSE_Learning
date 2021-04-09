@@ -11,12 +11,19 @@ class Demo5{
 	public <T extends Ib & Ia> void f(T t) {}// Ib
 }
 class Base1{
-	public void f(Point<String> p) {}//Point
+	public void f(Point<Object> p) {}//Point
+	public <T> void ff(T t) {}
 }
 class Sub1 extends Base1{
 	@Override
-	public void f(Point p) {}
+	public void f(Point<Object> p) {}
+	@Override
+	public void ff(Object t) {
+		
+	}
 }
+
+
 public class TestPoint8 {
 
 	public static void main(String[] args) {
